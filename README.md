@@ -65,3 +65,7 @@ Toggle을 활용하여 TabBar 구현
 
 https://youtu.be/NVBP_CoU-Xk?si=JIu5Zz8NXj-0oHdW
 
+=====================
+
+게임 내 sprite 들은 Unity 무료 에셋 및 빙 이미지 크리에이터를 활용해 만든 것들을 사용.
+

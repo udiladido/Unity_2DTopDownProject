@@ -141,10 +141,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Tes
+  m_text: Test
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 71c9221685c443846b6c8d85661ba0fe, type: 2}
+  m_sharedMaterial: {fileID: -7693882399055927754, guid: 71c9221685c443846b6c8d85661ba0fe,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -328,6 +329,7 @@ GameObject:
   - component: {fileID: 8064675864923346188}
   - component: {fileID: 2776678757065658103}
   - component: {fileID: 1028235769654589005}
+  - component: {fileID: 4572585145045214832}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -426,6 +428,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e2740978c43d834e84bd0276b402f57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isAction: 0
 --- !u!114 &5684311994434264525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -438,6 +441,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b00b227dcf0c9b4468e4e721f7c7c2ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scanObject: {fileID: 0}
 --- !u!114 &8064675864923346188
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -497,9 +501,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b96ec006179845f459706bd6527678d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerID: 0
-  playerName: {fileID: 1954386679516803065}
+--- !u!114 &4572585145045214832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4805659527136575985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8dbe957d30a02d6488f27c5ee247c539, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scanInfo: {fileID: 5684311994434264525}
+  dialogText: {fileID: 0}
   gameData: {fileID: 11400000, guid: c5204d375597e5e43828a3568e830831, type: 2}
+  ChatUI: {fileID: 0}
 --- !u!1 &8071443317799754799
 GameObject:
   m_ObjectHideFlags: 0

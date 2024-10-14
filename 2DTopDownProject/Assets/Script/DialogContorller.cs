@@ -44,6 +44,7 @@ public class DialogController : MonoBehaviour
             int dialogType = gameData.NPCDialog[i].Type;
             string[] dialogText = gameData.NPCDialog[i].Text;
 
+
             if (!NPCTalkDB.ContainsKey(npcName))
             {
                 NPCTalkDB[npcName] = new Dictionary<int, string[]>();
@@ -58,7 +59,7 @@ public class DialogController : MonoBehaviour
     private void DialogText()
     {
 
-
+        
         if (scanInfo.scanObject != null && controller.isAction)
         {
            
@@ -66,10 +67,12 @@ public class DialogController : MonoBehaviour
             string FindName = null; 
             FindName = scanObj.name;
 
-            Debug.Log(NPCTalkDB[FindName][0][0]);
+            
+
+            Debug.Log(NPCTalkDB[FindName].Count);
        
 
-            dialogText.text = NPCTalkDB[FindName][0][0];
+            dialogText.text = NPCTalkDB[FindName][1][0];
 
 
         }

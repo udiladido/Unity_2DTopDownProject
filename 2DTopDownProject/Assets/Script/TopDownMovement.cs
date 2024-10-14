@@ -56,19 +56,21 @@ public class TopDownMovement : MonoBehaviour
         direction = direction * 5;
         rigidbody.velocity = direction;
 
+        
 
         Debug.DrawRay(rigidbody.position, direction * 0.7f, new Color(255,0,0));
         RaycastHit2D rayHit = Physics2D.Raycast(rigidbody.position, direction , 0.7f, LayerMask.GetMask("NPC"));
+
+      
 
         if (rayHit.collider != null)
         {
             scanObject = rayHit.collider.gameObject;
            
         }
-        else
-            scanObject = null;
+  
 
-
+  
     }
 
 
